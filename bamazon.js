@@ -95,6 +95,7 @@ function compareQuantity (productId, quantity){
 				//console.log(dbQuantity);
 				if(quantity < dbQuantity){
 					console.log("There is enough stock to fulfill order");
+					updateStock(res, productId, quantity);
 					priceTotal(res, productId, quantity);
 				}else{
 					console.log("There is not enough stock to fulfill order");
@@ -115,5 +116,23 @@ function priceTotal(res, productId, quantity) {
 	var productPrice = res[productId -1].price;
 	var orderTotal = parseFloat(productPrice * quantity).toFixed(2);
 	console.log("Your total is: $",orderTotal)
+};
 
-}
+//function that updates database stock quantity after calculating how much is left over after fulfilling order
+function updateStock(res, productId, quantity){
+	var newStockQuantity = res[productId-1]["stock_quantity"] - quantity;
+	//console.log("New stock quantity: ", newStockQuantity);
+	connection.query("UPDATE products SET ? WHERE ?"
+		,[
+			{
+				stock_quantity: newStockQuantity
+			},
+			{
+				item_id: productId
+			}
+		],
+		function(err, res){
+			//console.log(res.affectedRows +"products updated");
+			console.log("Your order went through.");
+		})
+};
