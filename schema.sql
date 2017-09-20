@@ -19,13 +19,15 @@ VALUES
 	("bananas", "produce", 1.25,25),
 	("men's shirt", "clothing", 9.00, 30),
 	("tablet", "electronics", 70.99, 25),
-	(),
-	(),
-	(),
-	(),
-	(),
-	(),
-	(),
-	(),
-	(),
-	();
+	("apples", "produce",1.50, 60),
+	("women's jeans", "clothing",10.89,40),
+	("earbuds", "electronics", 9.99, 49),
+	("onions", "produce", 0.89, 40),
+	("boy's jacket", "clothing", 7.50, 40),
+	("girl's shirt", "clothing", 6.99, 30),
+	("smart phone", "electronics", 150.50, 25),
+	("shampoo", "grooming", 5.55, 40),
+	("toothpaste", "grooming", 3.89, 30),
+	("toothbrush", "grooming", 1.99, 40);
+
+SELECT * From products
