@@ -19,9 +19,9 @@ Access to a SQL database
 * Open Git Bash and git clone repository to a local folder
 * Open SQL database interface.
 
-⋅⋅⋅ In the case of this app MySQL Workbench was used.
+	* In the case of this app MySQL Workbench was used.
 
-⋅⋅⋅ Use the schema.sql file to start the database
+	* Use the schema.sql file to start the database
 
 -------------------
 
