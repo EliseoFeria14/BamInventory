@@ -41,17 +41,28 @@ $ node bamazon.js
 
 ### Examples
 
-	https://drive.google.com/open?id=0ByPluZTdRrJ7Zm1VNEVqd0V6RjQ
-	
-	https://drive.google.com/open?id=0ByPluZTdRrJ7blR3Z3docTB5R3c
+https://drive.google.com/open?id=0ByPluZTdRrJ7Zm1VNEVqd0V6RjQ
+
+https://drive.google.com/open?id=0ByPluZTdRrJ7blR3Z3docTB5R3c
 
 -------------------
 
 ## Built With
+
+* node.js
+* MySQL Workbench
+* mysql npm
+* inquirer npm
+
 -------------------
 
 ## Authors
+
+* Eliseo Mejia
+https://github.com/EliseoFeria14/mySQL_bamazon
 -------------------
 
 ## License
 -------------------
+
+* ICS 
